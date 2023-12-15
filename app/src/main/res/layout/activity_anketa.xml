@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnketaActivity">
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+
+        />
+
+    <TextView
+        android:id="@+id/question1TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Дали сте задоволни од начинот на кои што се одвиваат предавањата?"
+        android:layout_marginTop="50dp"
+        android:textSize="18sp"/>
+    <EditText
+        android:id="@+id/tekst1"
+        android:layout_width="245dp"
+        android:layout_height="54dp"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_below="@id/question1TextView"
+        />
+
+
+    <TextView
+        android:id="@+id/question2TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Дали сте задоволни од начинот на кои што се одвиваат вежбите?"
+        android:layout_below="@id/tekst1"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/tekst2"
+        android:layout_width="245dp"
+        android:layout_height="54dp"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_below="@id/question2TextView"
+        />
+
+    <TextView
+        android:id="@+id/zabeleski"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Други забелешки"
+        android:layout_below="@id/tekst2"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/tekst3"
+        android:layout_width="245dp"
+        android:layout_height="54dp"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_below="@id/zabeleski"
+        />
+
+
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tekst3"
+        android:layout_marginTop="16dp"
+        android:text="Поднеси"
+        android:onClick="insertData"
+        />
+
+
+</RelativeLayout>

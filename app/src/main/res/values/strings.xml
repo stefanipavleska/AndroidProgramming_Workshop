@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ProektEvidencija</string>
+    <string-array name="Denovi">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thurstday</item>
+        <item>Friday</item>
+    </string-array>
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>
